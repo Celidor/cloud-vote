@@ -16,7 +16,7 @@ spec:
         "beta.kubernetes.io/os": linux
       containers:
         - name: azure-vote-back
-          image: mcr.microsoft.com/oss/bitnami/redis:6.0.8
+          image: cloud.azurecr.io/redis:6.0.8
           env:
             - name: ALLOW_EMPTY_PASSWORD
               value: "yes"
@@ -59,7 +59,7 @@ spec:
         "beta.kubernetes.io/os": linux
       containers:
         - name: azure-vote-front
-          image: cloud.azurecr.io/cloud-vote:0.1.0
+          image: cloud.azurecr.io/cloud-vote:1.0.0
           resources:
             requests:
               cpu: 100m
